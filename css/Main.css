@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Courier';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://dl.dropboxusercontent.com/u/66196232/Shopping%20List/fonts/cour.ttf);
+}
+
+body {
+
+	font-family: 'Courier', sans-serif;
+	color: white;
+	background-color: #fff9ce;
+}
+
+h1 {
+
+	background-color: #3d5b9b;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#top {
+	height: 41px;
+	background-color: #585858;
+	padding: 5px 0 5px;
+}
+
+#spacer{
+	padding-top: 100px;
+}
+
+#container {
+
+	width: 600px;
+	background-color: #cff9f4;
+	margin-left: auto;
+	margin: auto;
+	border-radius: 2px;
+	min-height: 400px;
+	color: black;
+	padding-left: 10px;
+	border: 5px solid gray;
+
+}
+
+button {
+	border-radius: 2px;
+	border: 1px solid black;
+}
+
+button:hover {
+	background-color: green;
+	border: 2px solid #00ff11;
+	color: white;
+	font-weight: bolder;
+}
+
+li {
+	font-size: 20px;
+	border-bottom: 2px dashed white;
+
+
+}
+
+
+.bonus {
+	text-decoration: line-through;
+	color: #898888;
+}
+
+.clear:hover{
+	border-color: red;
+	background-color: #a50000;
+}
+
+#clearAll{
+	border-color: red;
+}
+

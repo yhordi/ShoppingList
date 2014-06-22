@@ -6,8 +6,9 @@
 	<head>
 
 		<title>Shopping List</title>
-		<link type="text/css" rel="stylesheet" href="main.css" />
-		<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<link href='https://dl.dropboxusercontent.com/u/66196232/Shopping%20List/fonts/cour.ttf' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 
@@ -15,19 +16,17 @@
 
 	<body>
 
+		<h1 class= "top">shopping list.</h1>
 		<div id = "spacer"></div>
 		<div id="container">
-		<h1>Shopping List</h1>
+
 		<input id="userInput"></input>
 		<button id="add">Add!</button>
+		<button id="clearChecked" class="clear">Clear Checked</button>
+		<button id="clearAll" class="clear">CLEAR ALL</button>
 		<div id="noString">Please enter an item.</div>
 		<ul id="shoppingList">
-			<li>
-				<input type="checkbox" class="cb"></input> Example 1
-			</li>
-			<li>
-				<input type="checkbox" class="cb"></input> Example 2
-			</li>
+			<LI><input type="checkbox"/>Example 1</LI>
 		</ul>
 		</div>
 	</body>
