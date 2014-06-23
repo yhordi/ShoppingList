@@ -6,35 +6,27 @@
 }
 
 body {
-
 	font-family: 'Courier', sans-serif;
 	color: white;
 	background-color: #fff9ce;
 }
 
 h1 {
-
+	margin: 0;
 	background-color: #3d5b9b;
 	font-size: 40px;
 	font-weight: bold;
-}
-
-#top {
 	height: 41px;
-	background-color: #585858;
 	padding: 5px 0 5px;
 }
 
-#spacer{
-	padding-top: 100px;
-}
 
-#container {
-
-	width: 600px;
-	background-color: #cff9f4;
+.container {
+	margin-top: 100px;
+	margin-right: auto;
 	margin-left: auto;
-	margin: auto;
+	width: 40%;
+	background-color: #cff9f4;
 	border-radius: 2px;
 	min-height: 400px;
 	color: black;
