@@ -1,8 +1,5 @@
 $(document).ready(function () {
-  var userItem = $("#userInput").val();
   $("#noString").hide();
-  $("#add").on("click", itemCleanUp);
-
   $("#userInput").keydown(function(e){
     if(e.which == 13) {
       var userItem = $("#userInput").val();
@@ -16,7 +13,6 @@ $(document).ready(function () {
       } else $("#noString").show();
     }
   });
-
 
 //view//
 var View = function() {}
