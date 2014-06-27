@@ -50,8 +50,7 @@ button:hover {
 li {
 	font-size: 20px;
 	border-bottom: 2px dashed white;
-
-
+	list-style-type: none;
 }
 
 

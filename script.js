@@ -1,61 +1,39 @@
-$(document).ready(function () {
-  $("#noString").hide();
-  $("#userInput").keydown(function(e){
-    if(e.which == 13) {
-      var userItem = $("#userInput").val();
-      if ($.trim(userItem) !== '') {
-        $('ul').append('<li>' + " " + userItem + '</li>');
-        $('input').val('');
-        $('<input>', {
-          type: "checkbox",
-        }).prependTo('li:last-child').addClass(".cb");
-        $("#noString").hide();
-      } else $("#noString").show();
-    }
-  });
+// $(document).ready(function () {
+//   $("#userInput").keydown(function(e){
+//     if(e.which == 13) {
+//       var userItem = $("#userInput").val();
+//       if ($.trim(userItem) !== '') {
+//         $('ul').append('<li>' + " " + userItem + '</li>');
+//         $('input').val('');
+//         $('<input>', {
+//           type: "checkbox",
+//         }).prependTo('li:last-child').addClass(".cb");
+//         $("#noString").hide();
+//       } else $("#noString").show();
+//     }
+//   });
 
-//view//
-var View = function() {}
+//   $("#clearChecked").click(function () {
+//     $("li.bonus").remove();
+//   });
 
-View.prototype = {
- itemCleanUp: function() {
-  debugger
-  if ($.trim(userItem) !== '') {
-      $('ul').append('<li>' + " " + userItem + '</li>');
-      $('input').val('');
-      $('<input>', {
-        type: "checkbox",
-      }).prependTo('li:last-child').addClass(".cb");
-      $("#noString").hide();
-    } else $("#noString").show();
- }
+//   $("#clearAll").click(function () {
+//     $("li").remove();
+//   });
 
-}
+// //checkbox functions for chekcing and unchecking
+//   $('body').on('click', 'input:checkbox', function () {
+//     $(this).parent("li").toggleClass("bonus");
 
+//   });
 
+//   if ($('checkbox:checked').is('checked')) {
+//     $('body').on('click', 'input:checkbox', function(){
+//       $(this).parent("li").removeClass("bonus");
+//     });
+//   }
 
-
-  $("#clearChecked").click(function () {
-    $("li.bonus").remove();
-  });
-
-  $("#clearAll").click(function () {
-    $("li").remove();
-  });
-
-//checkbox functions for chekcing and unchecking
-  $('body').on('click', 'input:checkbox', function () {
-    $(this).parent("li").toggleClass("bonus");
-
-  });
-
-  if ($('checkbox:checked').is('checked')) {
-    $('body').on('click', 'input:checkbox', function(){
-      $(this).parent("li").removeClass("bonus");
-    });
-  }
-
-});
+// });
 
 
 

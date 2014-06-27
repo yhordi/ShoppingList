@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  var controller = new Controller()
+  var view = new View()
+  var controller = new Controller(view)
   controller.bindListeners()
-  var userItem = $("#userInput").val();
+  $("#noString").hide();
 });
-
