@@ -1,18 +1,3 @@
-// $(document).ready(function () {
-//   $("#userInput").keydown(function(e){
-//     if(e.which == 13) {
-//       var userItem = $("#userInput").val();
-//       if ($.trim(userItem) !== '') {
-//         $('ul').append('<li>' + " " + userItem + '</li>');
-//         $('input').val('');
-//         $('<input>', {
-//           type: "checkbox",
-//         }).prependTo('li:last-child').addClass(".cb");
-//         $("#noString").hide();
-//       } else $("#noString").show();
-//     }
-//   });
-
 //   $("#clearChecked").click(function () {
 //     $("li.bonus").remove();
 //   });
