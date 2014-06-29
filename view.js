@@ -4,18 +4,13 @@ var View = function() {
 
 View.prototype = {
   createItem: function() {
-    console.log("createItem called")
     $('ul').append('<li>' + " " + $("#userInput").val() + '</li>');
     $('input').val('');
-    $('<input>', {
-      type: "checkbox",
-    }).prependTo('li:last-child').addClass(".cb");
+    this.addCheckBox()
     $("#noString").hide();
   },
   itemCleanUp: function() {
-    console.log("itemCleanUp called")
     if ($("#userInput").val().length > 0) {
-      console.log("if statement called")
       this.createItem()
     } else {
       this.showNoString()
@@ -25,7 +20,20 @@ View.prototype = {
     $("#noString").show()
   },
   addCheckBox: function(){
-
+    $('<input>', {
+      type: "checkbox",
+    }).prependTo('li:last-child').addClass(".cb");
+  },
+  clearChecked: function(){
+    console.log("clearChecked called")
+    $("li.bonus").remove();
+  },
+  clearAll: function(){
+    console.log("clearAll called")
+    $("li").remove();
+  },
+  boxCheck: function(){
+    console.log("box checked!")
+    $("li").toggleClass("bonus");
   }
-
 }

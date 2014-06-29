@@ -9,6 +9,9 @@ Controller.prototype = {
     $("#userInput").keydown(function(e) {
       self.enterPress(e)
     })
+    $("#clearChecked").click(this.view.clearChecked.bind(this))
+    $("#clearAll").click(this.view.clearAll.bind(this))
+    $('body').on('click', 'input:checkbox', this.view.boxCheck.bind(this));
   },
   cleanView: function() {
     console.log("cleanView")
